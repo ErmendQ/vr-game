@@ -9,6 +9,7 @@ public class HeadTurn : MonoBehaviour
 
     void Update()
     {
+        rotationSpeed = Random.Range(0, 5);
         if (player != null)
         {
             // Calculate the direction from the object to the player
