@@ -10,11 +10,13 @@ public class Movement : MonoBehaviour
     public Camera cameraRef;
 
     private NavMeshAgent agent;
+    private Animator animator;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-
+        animator = GetComponent<Animator>();
+        animator.enabled = false;
     }
 
     void Update()
@@ -23,6 +25,7 @@ public class Movement : MonoBehaviour
         Vector3 viewportPos = cameraRef.WorldToViewportPoint(transform.position);
         agent.SetDestination(player.position);
         agent.speed = 0;
+        animator. enabled = false;
 
         if (viewportPos.x < 0 || viewportPos.x > 1 || viewportPos.y < 0 || viewportPos.y > 1)
         {
@@ -30,6 +33,7 @@ public class Movement : MonoBehaviour
             Vector3 directionToPlayer = (player.position - transform.position).normalized;
             //transform.Translate(directionToPlayer * moveSpeed * Time.deltaTime);
             agent.speed = moveSpeed;
+            animator.enabled = true;
         }
     }
 }
