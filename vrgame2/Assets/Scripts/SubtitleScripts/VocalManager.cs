@@ -12,6 +12,7 @@ public class VocalManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        
     }
 
     private void Start()
@@ -27,5 +28,7 @@ public class VocalManager : MonoBehaviour
         }
 
         audioSource.PlayOneShot(clip.clip);
+
+        SubsUI.instance.SetSubtitle(clip.subtitle, clip.clip.length);
     }
 }

@@ -11,7 +11,7 @@ public class VocalTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             VocalManager.instance.PlayAudio(clipToPlay);
-            Debug.Log("It collided");
+            Destroy(this);
         }
     }
 }
