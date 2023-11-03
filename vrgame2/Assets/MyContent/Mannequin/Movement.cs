@@ -6,7 +6,8 @@ using UnityEngine.AI;
 public class Movement : MonoBehaviour
 {
     public Transform player; // Reference to the player's transform
-    public float moveSpeed = 5f;
+    public float moveSpeedWhenNotInView = 5f;
+    public float moveSpeedWhenInView = 0f; // Set to 0 for no movement when in view
     public Camera cameraRef;
 
     private NavMeshAgent agent;
@@ -23,17 +24,21 @@ public class Movement : MonoBehaviour
     {
         // Check if the object is visible on the camera
         Vector3 viewportPos = cameraRef.WorldToViewportPoint(transform.position);
-        agent.SetDestination(player.position);
-        agent.speed = 0;
-        animator. enabled = false;
 
         if (viewportPos.x < 0 || viewportPos.x > 1 || viewportPos.y < 0 || viewportPos.y > 1)
         {
             // The object is not in the camera's viewport, move towards the player
             Vector3 directionToPlayer = (player.position - transform.position).normalized;
-            //transform.Translate(directionToPlayer * moveSpeed * Time.deltaTime);
-            agent.speed = moveSpeed;
+            agent.speed = moveSpeedWhenNotInView;
+            agent.SetDestination(player.position);
             animator.enabled = true;
+        }
+        else
+        {
+            // The object is in the camera's viewport, stop moving and disable the animator
+            agent.ResetPath();
+            agent.speed = moveSpeedWhenInView;
+            animator.enabled = false;
         }
     }
 }
