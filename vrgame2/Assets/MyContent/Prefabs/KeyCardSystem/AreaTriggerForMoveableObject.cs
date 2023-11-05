@@ -12,6 +12,7 @@ public class AreaTriggerForMoveableObject : MonoBehaviour
     {
         if (!hasInteracted && other.gameObject == targetObject)
         {
+            Debug.Log("Object entered the trigger area");
             doorToOpen.IncrementAndCheck();
             hasInteracted = true;
         }
