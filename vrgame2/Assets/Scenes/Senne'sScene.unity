@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16089600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5494821144183190150, guid: 31c00c66fe3e7294da337ea08eda8dcf, type: 3}
+  m_PrefabInstance: {fileID: 1897835452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &16089605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16089600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ebf8a530ccfe0e4d870848b1bf4f6f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDeath: {fileID: 0}
 --- !u!1 &59828747
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +717,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathUI: {fileID: 619853617}
   Health: 2
+--- !u!114 &357664729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357664721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ebf8a530ccfe0e4d870848b1bf4f6f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDeath: {fileID: 0}
 --- !u!1 &619853617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,6 +2063,10 @@ PrefabInstance:
       value: Player (1)
       objectReference: {fileID: 0}
     - target: {fileID: 594580072104969898, guid: 31c00c66fe3e7294da337ea08eda8dcf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 594580072104969898, guid: 31c00c66fe3e7294da337ea08eda8dcf, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -2096,6 +2131,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 594580072104969898, guid: 31c00c66fe3e7294da337ea08eda8dcf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 357664726}
+    - targetCorrespondingSourceObject: {fileID: 594580072104969898, guid: 31c00c66fe3e7294da337ea08eda8dcf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 357664729}
+    - targetCorrespondingSourceObject: {fileID: 5494821144183190150, guid: 31c00c66fe3e7294da337ea08eda8dcf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 16089605}
   m_SourcePrefab: {fileID: 100100000, guid: 31c00c66fe3e7294da337ea08eda8dcf, type: 3}
 --- !u!1 &1907209226
 GameObject:
@@ -2112,11 +2153,11 @@ GameObject:
   - component: {fileID: 1907209227}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: DeathUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1907209227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2357,15 +2398,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6448058197169086379, guid: 8b014738ede6edc45ba8d83ad6eea978, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.49
+      value: -5.72
       objectReference: {fileID: 0}
     - target: {fileID: 6448058197169086379, guid: 8b014738ede6edc45ba8d83ad6eea978, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.71
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 6448058197169086379, guid: 8b014738ede6edc45ba8d83ad6eea978, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.53
+      value: -8.05
       objectReference: {fileID: 0}
     - target: {fileID: 6448058197169086379, guid: 8b014738ede6edc45ba8d83ad6eea978, type: 3}
       propertyPath: m_LocalRotation.w

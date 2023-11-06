@@ -7,7 +7,7 @@ public class PlayerDeath : MonoBehaviour
 {
     public GameObject DeathUI;
     
-    [SerializeField] private int Health = 2;
+    [SerializeField] public float Health = 2;
 
     private void Start()
     {
