@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorCounter : MonoBehaviour
 {
     public int variableToIncrement = 0; 
-    public int neededCount = 3;     
+    private int neededCount = 3;     
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,7 @@ public class DoorCounter : MonoBehaviour
     public void IncrementAndCheck()
     {
         variableToIncrement++;
+        Debug.Log(variableToIncrement);
 
         // Check if the variable has reached the limit
         if (variableToIncrement >= neededCount)

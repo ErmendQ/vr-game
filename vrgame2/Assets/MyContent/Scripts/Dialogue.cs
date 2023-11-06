@@ -17,9 +17,7 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
-        StartDialogue();
-        
-        
+        StartDialogue();      
     }
 
 
@@ -27,8 +25,6 @@ public class Dialogue : MonoBehaviour
     {
         index = 0;
         StartCoroutine(TypeLine());
-
-
     }
 
     void NextLine()
@@ -44,7 +40,6 @@ public class Dialogue : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-           
         }
     }
 
@@ -58,7 +53,6 @@ public class Dialogue : MonoBehaviour
        
         yield return new WaitForSeconds(nextLineSpeed);
         NextLine();
-
     }
 
 }
