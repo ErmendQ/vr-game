@@ -28,16 +28,7 @@ public class Dialogue : MonoBehaviour
         index = 0;
         StartCoroutine(TypeLine());
 
-        //if (textComponent.text == subLines[index])
-        //{
-        //    //StartCoroutine(WaitForNextLine());
-        //}
-        //else
-        //{
-        //    StopAllCoroutines();
-        //    textComponent.text = subLines[index];
 
-        //}
     }
 
     void NextLine()
@@ -70,16 +61,4 @@ public class Dialogue : MonoBehaviour
 
     }
 
-    //IEnumerator WaitForNextLine()
-    //{
-    //    for (int i = 0; i < subLines.Length; i++)
-    //    {
-    //        i++;
-    //        index++;
-    //        yield return new WaitForSeconds(nextLineSpeed);
-    //        NextLine();
-    //    }
-    //    yield return new WaitForSeconds(nextLineSpeed);
-    //    NextLine();
-    //}
 }

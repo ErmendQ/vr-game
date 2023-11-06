@@ -254,7 +254,7 @@ MonoBehaviour:
   - This is the first line
   - 'THis is the second line of dialogiue '
   - And this is the final line of dialogue after which it should dissapear
-  textSpeed: 0.5
+  textSpeed: 0.1
   nextLineSpeed: 1
 --- !u!1 &7121330368469171550
 GameObject:
