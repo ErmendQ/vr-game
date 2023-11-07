@@ -2449,6 +2449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Android_Sculpt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5698271145987607811, guid: 93c7151c9f1a31f4d8e675718028a940, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7180238955716603178, guid: 93c7151c9f1a31f4d8e675718028a940, type: 3}
       propertyPath: player
       value: 
@@ -2462,6 +2466,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93c7151c9f1a31f4d8e675718028a940, type: 3}
+--- !u!1001 &4015852960808730382
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.293759
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.9717884
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740730802650603563, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080945657364986513, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: m_Name
+      value: Android_Sculpt (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079707561866526474, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 16089606}
+    - target: {fileID: 6079707561866526474, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
+      propertyPath: cameraRef
+      value: 
+      objectReference: {fileID: 1864059090}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34ffe7ff46a98024cb2c8ef0eff8e83b, type: 3}
 --- !u!1001 &9015845199527342457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2534,3 +2603,4 @@ SceneRoots:
   - {fileID: 705900923}
   - {fileID: 9015845199527342457}
   - {fileID: 2081090224}
+  - {fileID: 4015852960808730382}
